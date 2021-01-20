@@ -1,6 +1,6 @@
 ﻿---
 wts:
-    title: '03 - Azure Container Instances 배포'
+    title: '03 - Azure Container Instances 배포(10분)'
     module: '모듈 02 - 핵심 Azure 서비스(워크로드)'
 ---
 
@@ -8,7 +8,7 @@ wts:
 
 이 연습에서는 Azure Portal에서 ACI(Azure Container Instances)를 사용하여 Docker 컨테이너를 생성, 구성 및 배포합니다. 이 컨테이너는 정적 HTML 페이지를 표시하는 ACI 시작 웹 애플리케이션입니다. 
 
-# 작업 1: 컨테이너 인스턴스 만들기
+# 작업 1: 컨테이너 인스턴스 만들기(10분)
 
 이 작업에서는 웹 애플리케이션에 대한 새 컨테이너 인스턴스를 만듭니다. 
 
@@ -31,7 +31,6 @@ wts:
 	| 크기| ***기본값 유지***|
 	|||
 
-
 4. 네트워킹 탭을 구성합니다(**xxxx**를 문자와 숫자로 대체하여 이름을 전역적으로 고유하게 지정). 다른 모든 설정은 기본값으로 유지합니다.
 
 	| 설정| 값|
@@ -39,7 +38,8 @@ wts:
 	| DNS 이름 레이블| **mycontainerdnsxxxx** |
 	|||
 	
-	**참고**: dns-name-label.region.azurecontainer.io에서 컨테이너에 공개적으로 연결할 수 있습니다. 배포 후 **DNS 이름 레이블을 사용할 수 없음**이라는 오류 메시지가 표시되면 다른 DNS 이름 레이블을 지정하고 다시 배포하세요.
+	**참고**: dns-name-label.region.azurecontainer.io에서 컨테이너에 공개적으로 연결할 수 있습니다. 배포 후 **DNS 이름 레이블을 사용할 수 없습니다** 오류 메시지가 발생할 경우 xxxx가 아닌 다른 DNS 이름 레이블을 지정하고 다시 배포하세요.
+
 
 	![Azure Portal 컨테이너 인스턴스 블레이드 만들기의 구성 창 스크린샷. DNS 이름 레이블이 입력되어 있습니다. ](../images/0201.png)
 

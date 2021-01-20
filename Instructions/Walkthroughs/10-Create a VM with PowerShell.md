@@ -1,13 +1,13 @@
 ﻿---
 wts:
-    title: '10 - PowerShell로 VM 만들기'
-    module: '모듈 02 - 핵심 Azure 서비스'
+    title: '10 - PowerShell로 VM 만들기(10분)'
+    module: '모듈 03: 핵심 솔루션 및 관리 도구 설명하기'
 ---
 # 10 - PowerShell로 VM 만들기
 
 이 연습에서는 Cloud Shell을 구성하고, Azure PowerShell 모듈을 사용하여 리소스 그룹 및 가상 머신을 만들고, Azure Advisor 권장 사항을 검토합니다. 
 
-# 작업 1: Cloud Shell 구성
+# 작업 1: Cloud Shell 구성(10분)
 
 이 작업에서는 Cloud Shell을 구성합니다. 
 
@@ -19,7 +19,7 @@ wts:
 
 3. 이전에 Cloud Shell을 사용한 경우 다음 작업으로 넘어갑니다. 
 
-4. **Bash** 또는 **PowerShell**을 선택하라는 메시지가 표시되면 **PowerShell**을 선택합니다. 
+4. **Bash** 또는 **PowerShell** 을 선택하라는 메시지가 표시되면 **PowerShell** 을 선택합니다.
 
 5. 메시지가 표시되면 **스토리지 만들기**를 클릭하고 Azure Cloud Shell이 초기화될 때까지 기다립니다. 
 

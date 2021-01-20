@@ -1,15 +1,13 @@
 ﻿---
 wts:
-    title: '13 - Azure Key Vault 구현'
-    module: '모듈 03 - 보안, 개인 정보 보호, 규정 준수 및 신뢰'
+    title: '12 - Azure Key Vault 구현(5분)'
+    module: '모듈 04: 일반적인 보안 및 네트워크 보안 기능에 관해 설명하기'
 ---
-# 13 - Azure Key Vault 구현
+# 12 - Azure Key Vault 구현
 
 이 연습에서는 Azure Key Vault를 만든 다음 해당 Key Vault 내에서 암호를 만들어 안전하게 저장되고 중앙에서 관리되는 암호를 애플리케이션에서 사용할 수 있도록 합니다.
 
-예상 시간: 10분
-
-# 작업 1: Azure Key Vault 만들기
+# 작업 1: Azure Key Vault 만들기(5분)
 
 1. [Azure Portal](https://portal.azure.com) 에 로그인합니다.
 
