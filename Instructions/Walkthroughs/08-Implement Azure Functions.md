@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '08 - Azure Functions 구현(5분)'
     module: '모듈 03: 핵심 솔루션 및 관리 도구 설명하기'
