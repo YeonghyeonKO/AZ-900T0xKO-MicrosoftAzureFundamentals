@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '12 - Azure Key Vault 구현(5분)'
     module: '모듈 04: 일반적인 보안 및 네트워크 보안 기능에 관해 설명하기'
@@ -45,7 +45,7 @@ wts:
     | 설정 | 값 | 
     | --- | --- |
     | 업로드 옵션 | **수동** |
-    | 이름 | **ExamplePasswordn* |
+    | 이름 | **ExamplePasswordn** |
     | 값 | **hVFkk96** |
     | | |
 
