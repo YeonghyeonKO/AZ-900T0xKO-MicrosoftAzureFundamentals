@@ -1,5 +1,5 @@
----
+﻿---
 wts:
-    title: '00 - Readme - Error Log'
-    module: 'Module 00 - Course Introduction'
+    title: '00 - 추가 정보 - 오류 로그'
+    module: '모듈 00 - 과정 소개'
 ---
