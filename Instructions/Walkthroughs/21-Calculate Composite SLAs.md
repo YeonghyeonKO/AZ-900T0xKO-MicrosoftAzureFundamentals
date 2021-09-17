@@ -1,9 +1,9 @@
----
+﻿---
 wts:
     title: '21 - 복합 SLA 계산(5분)'
     module: '모듈 06: Azure 비용 관리 및 서비스 수준 계약에 대해 설명하기'
 ---
-# 21 - 복합 SLA 계산
+# 21 - 복합 SLA 계산(5분)
 
 이 연습에서는 Azure 서비스의 가용성 SLA를 결정한 다음 애플리케이션 복합 SLA 기반 예상 가용성을 계산합니다.
 
@@ -14,7 +14,7 @@ wts:
 + **Application Gateway**: 애플리케이션 액세스, 스케일링을 관리합니다. 
 + **Azure SQL Database**: 애플리케이션 데이터를 저장합니다. 
 
-# 작업 1: 애플리케이션의 SLA 가동 시간 백분율 값 결정(5분)
+# 작업 1: 애플리케이션의 SLA 가동 시간 백분율 값 결정
 
 1. 브라우저에서 [Azure 서비스에 대한 SLA 요약](https://azure.microsoft.com/ko-kr/support/legal/sla/summary/) 페이지로 이동합니다.
 
