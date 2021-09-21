@@ -1,9 +1,7 @@
 ﻿# AZ-900T00 및 AZ-900T01: Microsoft Azure 기본 사항
 
-> **[랩 녹화 및 데모](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) 리포지토리에는 Microsoft 공식 커리큘럼에서 사용된 랩의 비디오 링크가 있습니다. Microsoft Certified Trainer가 포트폴리오에서 사용된 실습 랩의 비음성 녹화본에 쉽게 액세스할 수 있도록 하는 것이 목적입니다.**
-
 - **[연습 링크(HTML 형식)](https://microsoftlearning.github.io/AZ-900T0xKO-MicrosoftAzureFundamentals/)**
-- **MCT라면** - [MCT용 GitHub 사용자 가이드](https://microsoftlearning.github.io/MCT-User-Guide-KO)를 검토하세요.
+- **MCT인가요?** - [MCT용 GitHub 사용자 가이드](https://microsoftlearning.github.io/MCT-User-Guide-KO/)를 살펴보세요.
 
 ## Microsoft의 역할
 
@@ -15,21 +13,21 @@
 
 - 강사 핸드북과 PowerPoint는 여전히 과정 콘텐츠를 가르치는 기본 자료로 사용됩니다.
 
-- GitHub의 이러한 파일은 수강생 핸드북과 함께 사용할 수 있도록 설계되었지만 중앙 리포지토리 역할을 하는 GitHub에 위치합니다. 따라서 MCT와 과정 작성자가 최신 랩 파일의 원본을 공유할 수 있습니다.
+- GitHub의 이러한 파일은 수강생 핸드북과 함께 사용하도록 제작되었지만 중앙 리포지토리인 GitHub에 있기 때문에 MCT와 과정 작성자는 최신 랩 파일 원본을 공유할 수 있습니다.
 
 - 트레이너는 강의를 할 때마다 GitHub에서 최신 Azure 서비스를 지원하기 위해 변경된 내용을 확인하고 최신 파일을 가져와서 강의에 사용하는 것이 좋습니다.
 
 ## 수강생 핸드북의 변경 사항은 어떻게 됩니까?
 
-- 수강생 핸드북은 분기별로 검토하며, 필요에 따라 일반 MOC 릴리스 채널을 통해 업데이트됩니다.
+- 수강생 핸드북의 경우 분기별로 검토가 진행되며 필요에 따라 일반 MOC 릴리스 채널을 통해 업데이트됩니다.
 
-## 기여하려면 어떻게 해야 합니까?
+## 기고하려면 어떻게 해야 하나요?
 
 - 모든 MCT는 GitHub 리포지토리의 코드 또는 콘텐츠에 대한 끌어오기 요청을 제출할 수 있습니다. Microsoft와 과정 작성자는 콘텐츠 및 랩 코드 변경을 선별하고 필요에 따라 포함합니다.
 
-- MCT는 버그, 변경 사항, 개선 사항 및 아이디어를 제출할 수 있습니다.  Microsoft보다 먼저 새로운 Azure 기능을 찾았다면  새로운 데모를 제출해 주십시오!
+- 버그, 변경 내용, 개선 사항 및 아이디어를 제출할 수 있습니다.  Microsoft보다 먼저 새로운 Azure 기능을 찾았나요?  새로운 데모를 제출해 주세요!
 
-## 메모
+## 참고
 
 ### 강의 자료
 

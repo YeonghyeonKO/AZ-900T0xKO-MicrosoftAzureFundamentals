@@ -3,11 +3,11 @@ wts:
     title: '10 - PowerShell로 VM 만들기(10분)'
     module: '모듈 03: 핵심 솔루션 및 관리 도구 설명'
 ---
-# 10 - PowerShell로 VM 만들기
+# 10 - PowerShell로 VM 만들기(10분)
 
 이 연습에서는 Cloud Shell을 구성하고, Azure PowerShell 모듈을 사용하여 리소스 그룹 및 가상 머신을 만들고, Azure Advisor 권장 사항을 검토합니다. 
 
-# 작업 1: Cloud Shell 구성(10분)
+# 작업 1: Cloud Shell 구성 
 
 이 작업에서는 Cloud Shell을 구성합니다. 
 
@@ -17,11 +17,17 @@ wts:
 
     ![Azure Portal의 Azure Cloud Shell 아이콘 스크린샷.](../images/1002.png)
 
-3. 이전에 Cloud Shell을 사용한 경우 다음 작업으로 넘어갑니다. 
+3. **Bash** 또는 **PowerShell**을 선택하라는 메시지가 표시되면 **PowerShell**을 선택합니다.
 
-4. **Bash** 또는 **PowerShell** 을 선택하라는 메시지가 표시되면 **PowerShell** 을 선택합니다.
+4. **탑재된 스토리지 없음** 화면에서 **고급 설정 표시**를 선택한 다음 아래 정보를 채웁니다.
 
-5. 메시지가 표시되면 **스토리지 만들기**를 클릭하고 Azure Cloud Shell이 초기화될 때까지 기다립니다. 
+    | 설정 | 값 |
+    |  -- | -- |
+    | 리소스 그룹 | **새 리소스 그룹 만들기** |
+    | 스토리지 계정(전역적으로 고유한 이름을 사용하는 새 계정 만들기(예: cloudshellstoragemystorage)) | **cloudshellxxxxxxx** |
+    | 파일 공유(새로 만들기) | **shellstorage** |
+
+5. **스토리지 만들기** 선택
 
 # 작업 2: 리소스 그룹 및 가상 머신 만들기
 
@@ -29,19 +35,13 @@ wts:
 
 1. Cloud Shell 창의 왼쪽 위 드롭다운 메뉴에서 **PowerShell**이 선택되어 있는지 확인합니다.
 
-2. Cloud Shell 창 내의 PowerShell 세션에서 새 리소스 그룹을 만듭니다. 
-
-    ```PowerShell
-    New-AzResourceGroup -Name myRGPS -Location EastUS
-    ```
-
-3. 새 리소스 그룹을 확인합니다. 
+2. Powershell 창에서 다음 명령을 실행하여 새 리소스 그룹을 확인합니다. **Enter** 키를 눌러 명령을 실행합니다.
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
     ```
 
-4. 가상 머신을 만듭니다. 메시지가 표시되면 해당 가상 머신에서 로컬 관리자 계정으로 구성될 사용자 이름(**azureuser**) 및 암호(**Pa$$w0rd1234**)를 입력합니다. 마지막 줄을 제외한 각 줄의 끝에 틱(`) 문자를 포함해야 합니다(전체 명령을 한 줄에 입력하는 경우에는 틱 문자가 있어서는 안 됨).
+3. 다음 정보를 터미널 창에 붙여 넣어 가상 머신을 만듭니다. 
 
     ```PowerShell
     New-AzVm `
@@ -53,9 +53,10 @@ wts:
     -SecurityGroupName "myNSGPS" `
     -PublicIpAddressName "myPublicIpPS"
     ```
-** VM이 배포될 때까지 기다린 후에 PowerShell을 닫습니다.
+    
+4. 메시지가 표시되면 virtual machines.azureadmin에서 로컬 관리자 계정으로 구성될 사용자 이름(**azureuser**)과 암호(**Pa$$w0rd1234**)를 입력합니다.
 
-5. PowerShell 세션 Cloud Shell 창을 닫습니다.
+5. VM이 만들어지면 PowerShell 세션 Cloud Shell 창을 닫습니다.
 
 6. Azure Portal에서 **가상 머신**을 검색하고 **myVMPS**가 실행 중인지 확인합니다. 몇 분 정도 걸릴 수 있습니다.
 
@@ -77,13 +78,14 @@ wts:
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-4. 가상 머신을 중지합니다. 메시지가 표시되면 작업을 확인(Yes)합니다. 
+4. 다음 명령을 사용하여 이 가상 머신을 중지합니다. 
 
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
+5. 메시지가 표시되면 작업을 확인(Yes)합니다. **성공** 상태가 될 때까지 기다립니다.
 
-5. 가상 머신 상태를 확인합니다. 이제 PowerState가 **deallocated**여야 합니다. 포털에서 가상 머신 상태를 확인할 수도 있습니다. 
+6. 가상 머신 상태를 확인합니다. 이제 PowerState가 **deallocated**여야 합니다. 포털에서 가상 머신 상태를 확인할 수도 있습니다. Cloudshell을 닫습니다.
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize

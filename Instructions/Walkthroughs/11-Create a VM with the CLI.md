@@ -3,29 +3,33 @@ wts:
     title: '11 - CLI로 VM 만들기(10분)'
     module: '모듈 03: 핵심 솔루션 및 관리 도구 설명'
 ---
-# 11 - CLI로 VM 만들기
+# 11 - CLI로 VM 만들기(10분)
 
 이 연습에서는 Cloud Shell을 구성하고, Azure CLI 모듈을 사용하여 리소스 그룹 및 가상 머신을 만들고, Azure Advisor 권장 사항을 검토합니다. 
 
-# 작업 1: Cloud Shell 구성(10분)
+# 작업 1: Cloud Shell 구성 
 
-이 작업에서는 Cloud Shell을 구성합니다. 
+이 작업에서는 Cloud Shell을 구성한 다음 Azure CLI를 사용하여 리소스 그룹과 가상 머신을 만듭니다.  
 
 1. [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
 2. Azure Portal에서 오른쪽 상단의 아이콘을 클릭하여 **Azure Cloud Shell**을 엽니다.
 
     ![Azure Portal의 Azure Cloud Shell 아이콘 스크린샷.](../images/1002.png)
+   
+3. Azure Cloud Shell 시작하기 대화 상자에서 메시지가 표시되면 **Bash** 또는 **PowerShell**을 선택하고 **Bash**를 선택합니다. 
 
-3. 이전에 Cloud Shell을 사용한 경우 다음 작업으로 넘어갑니다. 
+4. 새 창이 열리면서 **탑재된 스토리지 없음**이라는 메시지가 표시됩니다. **고급 설정**을 선택합니다.
 
-4. **Bash** 또는 **PowerShell** 을 선택하라는 메시지가 표시되면 **Bash** 를 선택합니다. 
+5. 고급 설정 화면에서 다음 필드를 채우고 스토리지 만들기를 클릭합니다.
+    - 리소스 그룹: **새 리소스 그룹 만들기**
+    - 스토리지 계정: 전역적으로 고유한 이름을 사용하는 새 계정 만들기(예: cloudshellstoragemystorage))
+    - 파일 공유: 새 파일을 만들고 이름을 cloudshellfileshare로 지정합니다.
 
-5. 메시지가 표시되면 **스토리지 만들기** 를 클릭하고 Azure Cloud Shell이 초기화될 때까지 기다립니다. 
 
-# 작업 2: 리소스 그룹 및 가상 머신 만들기
+# 작업 2: CLI를 사용하여 가상 머신을 만들기
 
-이 작업에서는 Azure CLI를 사용하여 리소스 그룹과 가상 머신을 만듭니다.  
+이 작업에서는 Azure CLI를 사용하여 리소스 그룹과 가상 머신을 만듭니다.
 
 1. Cloud Shell 창의 왼쪽 위 드롭다운 메뉴에서 **Bash** 가 선택되어 있는지 확인합니다(그렇지 않다면 선택함).
 
@@ -43,20 +47,20 @@ wts:
     az group list --output table
     ```
 
-4. 새 가상 머신을 만듭니다. 마지막 줄을 제외한 모든 줄 뒤에 백슬래시(`\`) 문자가 있는지 확인합니다. 전체 명령을 한 줄에 입력하는 경우에는 백슬래시 문자를 사용하지 마세요. 
+4. Cloud Shell에 아래 명령을 입력하고 각 줄(마지막 줄 제외) 다음에 백슬래시(`\`) 문자가 있는지 확인합니다. 전체 명령을 한 줄에 입력하는 경우에는 백슬래시 문자를 사용하지 마세요. 
 
     ```cli
     az vm create \
     --name myVMCLI \
     --resource-group myRGCLI \
     --image UbuntuLTS \
-    --location EastUS \
+    --location EastUS2 \
     --admin-username azureuser \
     --admin-password Pa$$w0rd1234
     ```
 
     >**참고**: Windows 컴퓨터에서 명령줄을 사용하는 경우에는 백슬래시(`\`) 문자를 캐럿(`^`) 문자로 바꾸세요.
-    
+
     **참고**: 명령을 완료하는 데 2~3분 정도 걸립니다. 명령이 완료되면 가상 머신과 머신에 연결된 다양한 리소스(예: 스토리지, 네트워킹 및 보안 리소스)가 만들어집니다. 가상 머신 배포가 완료될 때까지 다음 단계로 진행하지 마십시오. 
 
 5. 명령 실행이 완료되면 브라우저 창에서 Cloud Shell 창을 닫습니다.
