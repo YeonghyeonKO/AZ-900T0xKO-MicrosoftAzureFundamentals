@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '06 - SQL Database 만들기(5분)'
     module: '모듈 02 - 핵심 Azure 서비스(워크로드)'
