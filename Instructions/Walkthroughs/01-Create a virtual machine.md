@@ -86,7 +86,7 @@ wts:
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
     ```
   
-3. 명령을 완료하면 **Success** 메시지와 **True** 값이 표시됩니다. 설치를 완료하기 위해 가상 머신을 다시 시작하지 않아도 됩니다. 가상 머신의 중앙 상단에 있는 파란색 막대에서 **x**를 클릭하여 VM에 대한 RDP 연결을 닫습니다. 중앙 상단의 파란색 막대에서 **-**를 클릭하여 최소화할 수도 있습니다.
+3. 명령을 완료하면 **Success** 메시지와 **True** 값이 표시됩니다. 설치를 완료하기 위해 가상 머신을 다시 시작하지 않아도 됩니다. 가상 머신의 중앙 상단에 있는 파란색 막대에서 **x**를 클릭하여 VM에 대한 RDP 연결을 닫습니다. 중앙 상단의 파란색 막대에서 **-** 를 클릭하여 최소화할 수도 있습니다.
 
     ![Install-WindowsFeature -name Web-Server -IncludeManagementTools 명령이 성공적으로 완료되었고 이를 알려주는 출력이 표시된 Windows PowerShell 명령 프롬프트의 스크린샷.](../images/0106.png)
 
