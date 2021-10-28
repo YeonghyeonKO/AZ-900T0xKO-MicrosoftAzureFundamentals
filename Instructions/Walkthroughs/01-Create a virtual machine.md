@@ -80,7 +80,7 @@ wts:
 
     ![시작 단추가 클릭되어 있고 PowerShell이 선택되어 있으며 관리자로 실행이 강조 표시되어 있는 가상 머신 데스크톱의 스크린샷.](../images/0105.png)
 
-2. PowerShell에서 다음 명령을 실행하여 가상 머신에 **Web-Server** 기능을 설치합니다. 
+2. PowerShell에서 다음 명령을 실행하여 가상 머신에 **Web-Server** 기능을 설치합니다. 명령에 붙여넣고 설치를 시작하려면 ENTER 키를 누릅니다.
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
